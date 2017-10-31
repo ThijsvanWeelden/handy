@@ -1,16 +1,162 @@
-body {
-	text-align : center;
-	font-family : Tahoma;
-	font-size : 14px;
-	background-color : black;
-	/* toe te voegen */
+*{margin: 0; padding: 0;}
+
+    body {
+    text-align : center;
+    font-family : sans-serif;
+    font-size : 14px;
+    background-color : black;
 }
 .all {
-	text-align : left;
-	width : 700px;
-	margin : 100px auto;
-	min-height : 600px;
-	background-image : url(bg.jpg);
-	border : 4px solid red;
+    text-align : left;
+    width : 700px;
+    margin : 100px auto;
+    min-height : 600px;
+    background-image : url("bg.jpg");
+    border : 4px solid red;
+  position: relative;
+}
+#title{
+    position: absolute;
+  top: -70px;
+    left: 18px;
+}
+#title:hover{
+    position: absolute;
+    top: -69px;
+    left: 18px;
 }
 
+
+#saw{
+  position: absolute;
+  top: 68px;
+    left: -49px;
+}
+#saw:hover{
+  position: absolute;
+  top: 69px;
+    left: -49px;
+}
+
+
+#hammer{
+    position: absolute;
+    left: 490px;
+    top: -58px;
+}
+#hammer:hover{
+    position: absolute;
+    left: 490px;
+    top: -57px;
+}
+
+
+#pincers{
+    position: absolute;
+    left: 562px;
+    top: 268px;
+}
+#pincers:hover{
+    position: absolute;
+    left: 562px;
+    top: 269px;
+}
+
+
+#screwdriver{
+    position: absolute;
+  	left: 546px;
+    top: 130px;
+}
+#screwdriver:hover{
+    position: absolute;
+ 	 left: 546px;
+    top: 131px;
+}
+
+
+#toolbox{
+    position: absolute;
+ 	 left: 215px;
+    top: 198px;
+}
+#toolbox:hover{
+    position: absolute;
+ 	 left: 215px;
+    top: 199px;
+}
+
+
+nav{
+  background-image: url("bar1.png");
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 99;
+}
+nav ul li{
+    display: inline;
+}
+nav ul li a{
+    text-decoration: none;
+    color: rgba(110, 128, 128,1);
+    padding: 23px;
+    font-weight: bold;
+}
+nav ul:hover{
+  background-image: url("bar2.png");
+}
+nav:hover a{
+    color: black;
+}
+
+
+#toolbox ul{
+    display: none;
+    background-color: white;
+    list-style: none;
+    width: 100px;
+}
+#toolbox ul li{
+    border: 1px solid black;
+}
+#toolbox ul li a{
+    text-decoration: none;
+    color: black;
+    padding: 4px;
+}
+#toolbox:hover ul{
+    display: block;
+    text-decoration: none;
+}
+#toolbox ul li:hover{
+    background-color: #ffff99;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+    color: blue;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+    color: black;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  padding: 4px;
+    border-radius: 12px;
+    border: 2px solid blue;
+    width: 200px;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+.content{
+    background-color: rgba(255, 255, 255, 0.3);
+    padding: 10px;
+    margin-top: 400px;
+}
